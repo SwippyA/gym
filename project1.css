@@ -17,7 +17,7 @@ body{
 .navbar::before{
     content: "";
     position: absolute;
-    background: url(img1.jpg) no-repeat center center/cover;
+    background: url(https://img.freepik.com/free-photo/stronger-young-muscular-caucasian-athlete-practicing-lunges-gym-with-barbell-male-model-doing-strength-exercises-training-his-lower-body-wellness-healthy-lifestyle-bodybuilding-concept_155003-36806.jpg?w=1060&t=st=1696079580~exp=1696080180~hmac=1fec92ddf19f60c909c614424ef347d057d6bbab1714360cc26f701e7c82e306) no-repeat center center/cover;
     width: 100%;
     height: 100% ;
     z-index: -1;
