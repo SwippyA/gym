@@ -1,0 +1,362 @@
+*{
+    margin: 0px;
+    padding: 0%;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: black;
+}
+/* it all about .navbar */
+.navbar{
+    display: flex;
+    height: 100%;
+    /* width: 100%; */
+}
+.navbar::before{
+    content: "";
+    position: absolute;
+    background: url(/img1.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 100% ;
+    z-index: -1;
+    opacity: 0.4;
+
+}
+.logo{
+    display: flex;
+    padding: 8px 11px;
+}
+.logo img{
+    height: 64px;
+    scale: calc(1);
+    width: 64px;
+    /* border: 3px green solid; */
+    margin: 8px 7px;
+    border-radius: 50%;
+    border: 3px red solid;
+    transition: all 2s ;
+}
+
+.logo img:hover{
+    scale: calc(1.2);
+    transform:rotateZ(360deg)
+
+}
+.headers{
+    display: flex;
+   
+
+}
+.head{
+    list-style: none;
+    padding: 39px;
+    margin-bottom: 68px;
+    
+}
+.head a{
+    padding: 3px 4px;
+    margin: 4px 4px ;
+    text-decoration: none;
+    color: white;
+    font-size: 19px ;
+    font-weight: bold;
+}
+.head a:hover{
+    color:red;
+    text-decoration: underline;
+    /* font-size: 12px; */
+    scale:var(-13px);
+
+}
+
+/* it all about home page */
+.home{
+    /* border: 3px red solid; */
+    display: flex;
+    height: 367px;
+    margin: 110px 23px;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    text-align: center;
+    /* align-content: center; */
+    /* padding: 13px; */
+
+    
+}
+.home h1{
+    position: relative;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(225, 2, 2);
+    font-weight: bold;
+    font-size: 34px;
+    transition: all 1s ease ;
+    text-decoration: underline;
+}
+.home h1:hover{
+    color: white;
+    transform: rotate(360deg);
+}
+.home p{
+    color: white;
+    position: relative;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    top: 40px;
+}
+.home button{
+    position: relative;
+    top: 50px;
+    border: 3px red solid;
+    font-size: 12px ;
+    border-radius: 13px ;
+    padding: 6px 
+}
+.home button:hover{
+    background-color: red;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+}
+
+/* it all about services */
+
+
+
+.line{
+    color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 3px red solid; */
+    /* height: 344px; */
+    margin-top: -60px;
+    margin-bottom: 50px;
+}
+.line h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-decoration: underline;
+    transition: all 1s ease ;
+
+}
+.line h1:hover{
+    color: white;
+    transform: rotate(360deg);
+}
+
+
+.service{
+    display: flex;
+    background-color: black;
+    width: 100%;
+}
+.service :hover{
+    border-color:  red ;
+}
+.section{
+    border: 9px white solid;
+    background-color: rgb(215, 209, 209);
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-content: center;
+    align-items: center;
+    height: 433px;
+    width: 30%;
+    margin: 12px ;
+    padding: 23px 32px ;
+    border-radius: 17px;
+}
+
+.section img{
+    width: 89px;
+    height: 89px;
+    position: relative;
+    /* top: -44px; */
+    scale:calc(1.4);
+    transition: all 3s ease ;
+    /* box-shadow: 3px 3px 3px black; */
+    
+}
+.section img:hover{
+    animation: img 1s ease 0s 1 normal forwards;   
+    scale:calc(2);
+
+}
+
+@keyframes img {
+    0%,100%{
+        transform: translateY(0px);
+    }
+
+    30%{
+        transform: translateY(-23px);
+    }
+    45%{
+        transform: translateY(0px);
+    }
+    60%{
+        transform: translateY(-13px);
+    }
+
+    
+}
+.section h1 {
+    color: black;
+    position: relative;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 5px;
+    top: 23px;
+}
+
+.section p{
+    margin-top: 54px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* all about clint  */
+
+
+#clint{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 3px red solid; */
+    height: 100vh;
+    margin: 12px;
+    padding: 23px 13px;
+}
+
+#clint::before{
+    content: "";
+    position: absolute;
+    background: url(https://t3.ftcdn.net/jpg/05/21/46/04/360_F_521460425_KQwoR3uz6hlob6DpgAVWJkLJ6bh2d9k2.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 100% ;
+    z-index: -1;
+    opacity: 0.4;
+}
+.clint{
+    color: red;
+    font-size: 35px;
+    
+    position: relative;
+    margin:  23px 23px ;
+    top: -29px ;  
+    transition: all 1s ease ;
+    text-decoration: underline;
+    
+}
+.clint:hover{
+    color: white;
+    transform: rotate(360deg);
+    
+}
+.imgclint{
+    display: flex;
+    position: relative;
+    top: -27px;
+    /* border: 3px gold solid; */
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 1200px;
+}
+.imgclint img{
+    width: 27%;
+    height: 250px;
+    /* padding: 5px 5px ; */
+    margin: 10px 3px ;
+    border: 8px white solid;
+    border-radius: 23px;
+}
+.imgclint img:hover{
+    border-color: red;
+}
+
+/* all abour form */
+
+
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* width: 100%; */
+    height: 100vh;
+    margin: 143px;
+    margin-bottom: 0px;
+    padding: 12px 23px ;
+    
+}
+.form::before{
+    content: "";
+    position: absolute;
+    background: url(https://img.freepik.com/free-photo/top-view-blue-monday-concept-composition-with-telephone_23-2149139103.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 645px ;
+    z-index: -1;
+    opacity: 0.4;
+}
+.text{
+
+    font-size: 35px;
+    position: relative;
+    font-weight: bold;
+    color: red;
+    /* left: 17px; */
+    /* top: 30px; */
+    
+}
+.text h1:hover{
+    color: white;
+    transform: rotate(360deg);
+}
+.text h1{
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    transition: all 1s ease;
+    text-decoration: underline;
+    margin: -140px;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    margin: 23px 23px ;
+    padding: 12px;
+    position: relative;
+    /* left: 400px; */
+    /* top: -43px; */
+
+}
+.contact input,.contact textarea {
+    width: 345px ;
+    background-color: rgb(124, 232, 232);
+    font-weight: bold;
+    font-size: 22px ;
+    border: 2px white solid;
+
+}
+.contact label{
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+.center{
+
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+    top: -45px;
+}
+
+
+
+

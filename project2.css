@@ -1,0 +1,46 @@
+
+.navbar{
+    flex-direction: column;
+    align-items: center;
+    height: 345px;
+}
+.navbar::before{
+    background-size: cover;
+}
+.head a{
+    font-size: 10px;
+}
+.service{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin:? 6px; */
+    margin: 64px 5px54px 4px ;
+    
+
+}
+.line h1{
+    position: relative;
+    top: 53px;
+}
+.section{
+    flex-direction: column;
+    width: 100%;
+    margin: 3px;
+    padding: 2px;
+}
+#clint{
+    overflow: hidden;   
+    flex-direction: column;
+    margin: 13px; 
+}
+.form{
+    /* overflow: hidden; */
+    margin: 3px;
+}
+.contact input,.contact textarea {
+    width: 134px;
+}
+.center{
+    flex-wrap: wrap;
+}
